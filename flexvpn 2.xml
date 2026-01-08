@@ -9,7 +9,10 @@
     <HostEntry>
       <HostName>isrc1111 FlexVPN</HostName>
       <HostAddress>207.108.121.182</HostAddress>
-      <PrimaryProtocol>IKEv2</PrimaryProtocol>
+      
+      $AnyConnectClient$
+      <!-- Change 2: Use IPsec for IKEv2/FlexVPN connections -->
+      <PrimaryProtocol>IPsec</PrimaryProtocol>
       <UserGroup>$AnyConnectClient$</UserGroup>
     </HostEntry>
   </ServerList>
