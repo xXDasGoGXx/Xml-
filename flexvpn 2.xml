@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<AnyConnectProfile xmlns="schemas.xmlsoap.org" xmlns:xsi="www.w3.org" xsi:schemaLocation="schemas.xmlsoap.org AnyConnectProfile.xsd">
+<AnyConnectProfile xmlns="http://schemas.xmlsoap.org/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.xmlsoap.org/encoding/ AnyConnectProfile.xsd">
   <ClientInitialization>
     <UseStartBeforeLogon>false</UseStartBeforeLogon>
     <AutomaticCertSelection>false</AutomaticCertSelection>
@@ -10,7 +10,6 @@
       <HostName>isrc1111 FlexVPN</HostName>
       <HostAddress>207.108.121.182</HostAddress>
       <PrimaryProtocol>IKEv2</PrimaryProtocol>
-      
       <UserGroup>$AnyConnectClient$</UserGroup>
     </HostEntry>
   </ServerList>
