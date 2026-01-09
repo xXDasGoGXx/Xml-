@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<AnyConnectProfile xmlns="schemas.xmlsoap.org" xmlns:xsi="www.w3.org" xsi:schemaLocation="schemas.xmlsoap.org AnyConnectProfile.xsd">
+<AnyConnectProfile xmlns="http://schemas.xmlsoap.org/anyconnectprofile">
   <ClientInitialization>
     <UseStartBeforeLogon>false</UseStartBeforeLogon>
-    <AutomaticCertSelection>false</AutomaticCertSelection>
+    <AutomaticCertSelection>true</AutomaticCertSelection>
     <BlockUntrustedServers>false</BlockUntrustedServers>
   </ClientInitialization>
   <ServerList>
     <HostEntry>
-      <HostName>isrc1111 VPN</HostName>
+      <HostName>207.108.121.182</HostName>
       <HostAddress>207.108.121.182</HostAddress>
-      $AnyConnectClient$
       <PrimaryProtocol>IPsec</PrimaryProtocol>
+      <UserGroup>$AnyConnectClient$</UserGroup>
     </HostEntry>
   </ServerList>
 </AnyConnectProfile>
