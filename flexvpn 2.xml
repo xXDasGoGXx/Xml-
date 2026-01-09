@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<AnyConnectProfile xmlns="http://schemas.xmlsoap.org/anyconnectprofile">
-  <ClientInitialization>
-    <UseStartBeforeLogon>false</UseStartBeforeLogon>
-    <AutomaticCertSelection>true</AutomaticCertSelection>
-    <BlockUntrustedServers>false</BlockUntrustedServers>
-  </ClientInitialization>
-  <ServerList>
-    <HostEntry>
-      <HostName>207.108.121.182</HostName>
-      <HostAddress>207.108.121.182</HostAddress>
-      <PrimaryProtocol>IPsec</PrimaryProtocol>
-      <UserGroup>$AnyConnectClient$</UserGroup>
-    </HostEntry>
-  </ServerList>
+<AnyConnectProfile xmlns="http://schemas.xmlsoap.org/encoding/">
+	<ClientInitialization>
+		<AuthenticationTimeout>60</AuthenticationTimeout>
+	</ClientInitialization>
+	<ServerList>
+		<HostEntry>
+			<HostName>Home</HostName>
+			<HostAddress>207.108.121.182</HostAddress>
+			<PrimaryProtocol>IPsec
+				<StandardAuthenticationOnly>true
+					<AuthMethodDuringIKENegotiation>IKE-RSA</AuthMethodDuringIKENegotiation>
+				</StandardAuthenticationOnly>
+			</PrimaryProtocol>
+		</HostEntry>
+	</ServerList>
 </AnyConnectProfile>
